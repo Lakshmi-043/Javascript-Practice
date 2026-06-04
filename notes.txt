@@ -1,0 +1,39 @@
+Javascript provides behaviour to code for creating webpages.
+To do any functionalities for a web creation we use javascript.
+We can make dynamic pages,link to backend side and to validate those.
+Javascript is a scripting language.
+Javascript starts from left to right acting.
+javascript accept caamelcase format-means second word of starting letter should be capital.
+javascript printing statement is console.log
+
+1>......VARIABLE........<1
+Variable is like a memory there we can store values
+Types of variables-->1.Var-->rules
+---variable---- 
+var a = 50
+console.log(a)
+a=55
+var a = 60
+console.log(a)
+---let------
+//1.declaration
+//let b
+//2.initialization
+let b = 40
+//3.reuse 4.reinitialization
+b = 66
+//5.redeclaration
+//let b .....redeclaration not accept
+console.log(b);
+---const----
+/const - constant
+//1.declaration &2. //initialization
+const c = 30
+//reuse
+c = 20 //3.reuse 4.reinitialization also not accept
+// 5 .redeclaration
+//const c = 50 ...not accept redeclaration
+console.log(c);
+
+2>.....PRINTING STEATEMENTS......
+
