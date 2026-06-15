@@ -113,6 +113,32 @@ let totalObj = {......obj1,.....onj2}
 console.log(totalObj);
 
 //rest Operator
-
+....Array Higher order function....
+We use array higher order function in real time as:
+for product searches,for entering records
+Types of Array higher order function
+1.for each()
+2.filter()- is used for product searches
+3.map()- for displaying selected fields
+4.find()- for searching a specific record
+5.reduce()- for bill calculations 
+6.some()- for checking if any record matches a condition
+7.every()- for validating all records
+....String....
+A string is a sequence of characters used to store text data.
+....String Methods:....
+charAt()-returns the character at a specified index
+charCodeAt()-is used to get the Unicode value of that character
+length-is a property used to find the number of characters in a string
+slice-Extract part of string
+toUpperCase()-Converts text to uppercase
+toLowerCase()-Converts text to lowercase
+trim()-Removes extra spaces from the beginning and end
+includes()-Checks whether a string contains a specific value
+split()-Converts a string into an array
+replace()-Replaces a value with another value
+startsWith()-Checks whether a string starts with a specific value
+endsWith()-Checks whether a string ends with a specific value
+indexOf()-Returns the position of a character or word.
 
 
