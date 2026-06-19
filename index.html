@@ -1,30 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>FashionNest</title>
+  <link rel="stylesheet" href="./sample.css">
 </head>
 <body>
-    <!-- <script src="./script1.js"> -->
-    </script>
-    <!-- <script src="./script2.js"> -->
-    </script>
-    <!-- <script src="./script3.js"> -->
-    </script>
-    <!-- <script src="./script4.js"> -->
-
-    </script>
-    <!-- <script src="./script5.js"> -->
-
-    </script>
-    <!-- <script src="./script6.js"> -->
-
-    </script>
-    <!-- <script src="./script7.js"> -->
-
-    </script>
-    <script src="./script8.js">
-    </script>
+<nav class="navbar">
+  <div class="logo">
+      <div class="nav-left"></div>
+      <img src="./logo1(1).png">
+      </div>
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search Products..." />
+</div>
+<div class="menu">
+  <a href="#"> Home</a>
+</div>
+<div class="nav-icons">
+    <span>👤 Login</span>
+    <span>❤️ Wishlist</span>
+<div class="cart-icon" onclick="toggleCart()">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span id="cartCount">0</span>
+</div>
+</div>
+</nav>
+<div id="cartPanel" class="cart-panel hidden">
+  <h3>Your Cart</h3>
+  <button onclick="toggleCart()" class="back-btn">
+    ⬅ Back to Shopping
+  </button>
+<div id="cartItems"></div>
+</div>
+<section class="hero">
+  <h1><b>Welcome To E-Commerce Dashboard</b></h1>
+  <h2>FashionNest Mega Sale</h2>
+  <h4>Up To 70% OFF On Trending Fashion</h4>
+</section>
+<section class="category-section">
+  <select id="categoryFilter">
+    <option value="all">All Categories</option>
+    <option value="men's clothing">Men's Clothing</option>
+    <option value="women's clothing">Women's Clothing</option>
+    <option value="electronics">Electronics</option>
+    <option value="jewelery">Jewelry</option>
+  </select>
+</section>
+<p id="status"></p>
+<section class="stats">
+  <div class="stat-box" id="totalProducts"></div>
+  <div class="stat-box" id="avgPrice"></div>
+  <div class="stat-box" id="highestProduct"></div>
+  <div class="stat-box" id="lowestProduct"></div>
+</section>
+<h2 class="title">Trending Products</h2>
+<div id="productContainer"></div>
+<footer>
+  <h3>FashionNest</h3>
+  <p>Your Online Shopping Destination</p>
+</footer>
+<script src="./script9.js" defer></script>
 </body>
 </html>

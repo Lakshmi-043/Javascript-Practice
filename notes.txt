@@ -141,4 +141,166 @@ startsWith()-Checks whether a string starts with a specific value
 endsWith()-Checks whether a string ends with a specific value
 indexOf()-Returns the position of a character or word.
 
+.....Date......
+Date is a built-in JavaScript object used to create, store, and manipulate dates and times. 
+It helps developers work with current dates, specific dates, and time-related calculations.
+->Display the current date and time.
+->Show timestamps for posts, messages, and transactions.
+->Calculate age, deadlines, and durations.
+->Create calendars and scheduling applications.
+Example: 
+Common methods:
+.getFullYear()-Returns the current year as a four-digit number
+Ex:let date = new Date();
+console.log(date.getFullYear());
+.getMonth()-Returns the month number (0 to 11)
+Ex:let date = new Date();
+console.log(date.getMonth());
+.getDate()-Returns the day of the month (1–31)
+Ex:let date = new Date();
+console.log(date.getDate());
+.getHours()-Returns the current hour in 24-hour format (0–23)
+Ex:let date = new Date();
+console.log(date.getHours());
+.getMinutes()-Returns the current minutes (0–59)
+Ex:let date = new Date();
+console.log(date.getMinutes());
+.getSeconds()-Returns the current seconds (0–59)
+Ex:let date = new Date();
+console.log(date.getSeconds());
+->Used in calendars, timestamps, age calculators, reminders, and scheduling applications.
+....ASYNC....
+Async is a JavaScript feature that allows code to perform long-running operations without blocking 
+the execution of other code. The async keyword creates an asynchronous function, and await pauses 
+execution until a Promise is resolved.
+->Makes code easier to read than .then().
+->Handles asynchronous operations smoothly.
+->Prevents blocking the execution of other code.
+->Commonly used with APIs and data fetching.
+Example:
+async function greet() {
+    return "Hello World";
+}
+greet().then(result => console.log(result));
+Output:Hello World
+Example:async function getUsers() {
+    let response = await fetch("https://jsonplaceholder.typicode.com/users");
+    let users = await response.json();
+    console.log(users);
+}
+getUsers();
+Reason:fetch() requests data =from an APIs,awaits waiting for the response,response.json Converts
+data into js.
+->async makes a function asynchronous.
+->await waits for a Promise to complete.
+->await can only be used inside an async function.
+->async/await makes asynchronous code easier to read and maintain.
+->Commonly used with APIs and Fetch requests.
+1. setTimeout()
+it executes a function once after a specified delay
+Syntax:setTimeout(function, delay);
+Example:
+console.log("Start");
+setTimeout(() => {
+    console.log("Hello after 3 seconds");
+}, 3000);
+console.log("End");
+Output:
+Start
+End
+Hello after 3 seconds
+2. setInterval()
+It executes a function repeatedly at a specified time interval
+Syntax:
+setInterval(function, delay);
+Example:
+let count = 1;
+setInterval(() => {
+    console.log("Count:", count);
+    count++;
+}, 1000);
+Output:
+Count: 1
+Count: 2
+Count: 3
+...
+The function runs every 1 second.
+The count value increases continuously.
+3. Promise
+A Promise is a JavaScript object used to handle asynchronous operations. 
+It represents a value that may be available now, later, or never.
+2.Resolved (Fulfilled) → Operation completed successfully.
+3.Rejected → Operation failed.
+Syntax:
+let promise = new Promise((resolve, reject) => {
+});
+Example:
+function fetchData() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("User Data Loaded");
+        }, 2000);
+    });
+}
+fetchData()
+    .then(data => {
+        console.log(data);
+    });
+Output:
+User Data Loaded
 
+....DOM....
+DOM (Document Object Model) is a tree-like representation of an HTML document that allows JavaScript 
+to select, traverse, and manipulate elements dynamically.
+DOM Operations:
+Selecting → Finding elements (getElementById, querySelector).
+1.getElementById()
+Example:
+let title = document.getElementById("title");
+console.log(title);
+2.querySelector()
+Example:
+let title = document.querySelector("#title");
+console.log(title);
+3.querySelectorAll()
+Example:
+let items = document.querySelectorAll(".item");
+console.log(items);
+Traversing → Moving between elements (parentElement, children, nextElementSibling).
+1.Access Parent Element
+Example:
+let p = document.querySelector("p");
+console.log(p.parentElement);
+2.Access First Child
+Example:
+let parent = document.getElementById("parent");
+console.log(parent.firstElementChild);
+3.Access Last Child
+Example:
+console.log(parent.lastElementChild);
+4.Access Next Sibling
+Example:
+let first = parent.firstElementChild;
+console.log(first.nextElementSibling);
+Manipulating → Changing content, styles, and structure (textContent, innerHTML, appendChild).
+Example:
+let title = document.getElementById("title");
+let btn = document.getElementById("btn");
+btn.addEventListener("click", () => {
+    title.textContent = "Hello DOM";
+    title.style.color = "green";
+});
+Output:
+When the button is clicked:
+Text changes from Welcome to Hello DOM
+Color changes to green
+
+
+
+
+
+
+
+
+
+ 
